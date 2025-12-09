@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Открою зоомагазин «Под Ключ» — Татьяна</title>
+  <style>
+    /* --- Улучшенная мобильная адаптация --- */
+    @media(max-width:600px){
+      .hero{flex-direction:column; text-align:center}
+      .grid{grid-template-columns:1fr}
+      header{padding:20px}
+      .btn{width:100%; text-align:center}
+    }
+
+    /* --- Фирменное оформление формы --- */
+    .form-block input,
+    .form-block textarea{
+      width:100%; padding:12px 14px; border-radius:10px;
+      border:1px solid #c8c8c8; font-size:15px; transition:0.3s ease;
+      background:#fafafa;
+    }
+    .form-block input:focus,
+    .form-block textarea:focus{
+      border-color:var(--accent);
+      outline:none;
+      background:#fff;
+      box-shadow:0 0 0 3px rgba(43,138,62,0.15);
+    }
+    .form-label{font-weight:600; margin-bottom:6px; display:block}
+    .card form button{width:100%; padding:12px; font-size:16px}
+
+    /* --- Стиль кнопки оплаты --- */
+    .pay-btn{display:inline-block; background:#2b8a3e; color:#fff;
+      padding:12px 16px; border-radius:12px; text-decoration:none;
+      font-size:18px; font-weight:600; width:100%; text-align:center}
+    .pay-btn:hover{opacity:0.9}
+
+    :root{--accent:#2b8a3e;--muted:#666}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:#f7f7f8; color:#222}
+    .container{max-width:1100px; margin:32px auto; padding:20px}
+    header{background:linear-gradient(90deg,#fff 0%, #f3fff6 100%); border-radius:14px; padding:28px; box-shadow:0 6px 20px rgba(20,20,20,0.04)}
+    .hero{display:flex; gap:24px; align-items:center; flex-wrap:wrap}
+    .hero h1{margin:0; font-size:28px}
+    .hero p.lead{margin:6px 0 0; color:var(--muted)}
+    .badge{background:var(--accent); color:#fff; padding:6px 10px; border-radius:999px; font-weight:600}
+
+    .grid{display:grid; grid-template-columns:1fr 360px; gap:20px; margin-top:20px}
+    .card{background:#fff; border-radius:12px; padding:18px; box-shadow:0 6px 18px rgba(20,20,20,0.04)}
+    h2{margin-top:0}
+    ul{padding-left:18px}
+    .list-check li{margin:8px 0}
+    .packages .pkg{border-left:4px solid #eee; padding:12px; margin-bottom:12px}
+    .price{font-weight:700; font-size:20px}
+    .btn{display:inline-block; background:var(--accent); color:#fff; padding:10px 14px; border-radius:10px; text-decoration:none}
+    .small{font-size:14px; color:var(--muted)}
+    footer{margin-top:22px; text-align:center; color:var(--muted); font-size:13px}
+
+    @media(max-width:900px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="hero">
+        <div style="flex:1">
+          <div class="badge">За 30 дней</div>
+          <h1>Открою Ваш Зоомагазин «Под Ключ»</h1>
+          <p class="lead">6 лет опыта • несколько собственных зоомагазинов • Реальные результаты</p>
+        </div>
+        <div style="text-align:right; min-width:220px">
+          <p class="small">Меня зовут <strong>Татьяна</strong></p>
+          <a class="btn" href="mailto:tatiana@example.com">Написать мне</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <div class="card">
+          <h2>🐾 Обо мне</h2>
+          <p>Я — предприниматель, прошедшая весь путь запуска зоомагазинов самостоятельно, без инвесторов и больших команд. За 6 лет открыла несколько магазинов, выстроила работу с поставщиками, обучала персонал, делала выкладки, закупки, маркетинг и организовывала открытия.</p>
+
+          <ul class="list-check">
+            <li>✔️ как избежать ненужных трат</li>
+            <li>✔️ как выбрать действительно выгодную локацию</li>
+            <li>✔️ какие товары продаются, а какие просто занимают полки</li>
+            <li>✔️ какие ошибки совершают 90% новичков — и как от них уйти</li>
+          </ul>
+
+          <p>Мой подход — с нуля до первых продаж: полное погружение и поддержка.</p>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h2>🚀 Что я сделаю для вас</h2>
+
+          <h3>🔧 Подготовка и документы</h3>
+          <ul>
+            <li>Регистрация юрлица</li>
+            <li>Оформление всех разрешений</li>
+            <li>Помощь в выборе и анализе места</li>
+          </ul>
+
+          <h3>🛒 Ассортимент и поставщики</h3>
+          <ul>
+            <li>Подбор ассортимента под бюджет</li>
+            <li>База проверенных поставщиков (корма, аксессуары, лакомства)</li>
+            <li>Настройка финансовой модели и маржинальности</li>
+          </ul>
+
+          <h3>🏪 Оборудование и процессы</h3>
+          <ul>
+            <li>Подбор торгового оборудования</li>
+            <li>Организация кассовой зоны</li>
+            <li>Настройка системы лояльности и выкладка</li>
+          </ul>
+
+          <h3>🎉 Маркетинг и открытие</h3>
+          <ul>
+            <li>Создание вывески и промоматериалов</li>
+            <li>Организация «громкого открытия»</li>
+            <li>Запуск первых продаж и чек-лист по удержанию клиентов</li>
+          </ul>
+        </div>
+
+        <div class="card packages" style="margin-top:18px">
+          <h2>Пакеты и стоимость</h2>
+
+          <div class="pkg">
+            <div style="display:flex; justify-content:space-between; align-items:center">
+              <div>
+                <strong>⭐ Старт</strong>
+                <div class="small">Идеально, если вы хотите открыть магазин самостоятельно, но с поддержкой</div>
+              </div>
+              <div class="price">27 000 ₽</div>
+            </div>
+            <ul>
+              <li>1,5 часа консультации</li>
+              <li>Полный гайд по открытию</li>
+              <li>Чек-лист документов и список поставщиков</li>
+              <li>Поддержка в переписке 7 дней</li>
+            </ul>
+          </div>
+
+          <div class="pkg">
+            <div style="display:flex; justify-content:space-between; align-items:center">
+              <div>
+                <strong>⭐⭐ Оптимум</strong>
+                <div class="small">Самый популярный пакет — работа под контролем и с чётким планом</div>
+              </div>
+              <div class="price">71 900 ₽</div>
+            </div>
+            <ul>
+              <li>Всё из пакета «Старт»</li>
+              <li>Помощь в регистрации юрлица</li>
+              <li>Поиск и оценка локации</li>
+              <li>Ассортиментная матрица, финмодель, индивидуальный план на 30 дней</li>
+              <li>4 видеосессии по 40 минут, поддержка 30 дней</li>
+            </ul>
+          </div>
+
+          <div class="pkg">
+            <div style="display:flex; justify-content:space-between; align-items:center">
+              <div>
+                <strong>⭐⭐⭐ Премиум «Под Ключ»</strong>
+                <div class="small">Полный запуск и сопровождение до первых продаж</div>
+              </div>
+              <div class="price">214 900 ₽</div>
+            </div>
+            <ul>
+              <li>Полное ведение до первых продаж</li>
+              <li>Регистрация юрлица и все разрешения</li>
+              <li>Поиск помещения, подбор оборудования и поставщиков</li>
+              <li>Создание вывески, дизайн, промоматериалы, «громкое открытие»</li>
+              <li>Ежедневное сопровождение 30 дней, личный чат и видеозвоны</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h2>🎁 Бонусы</h2>
+          <ul>
+            <li>Шаблон бизнес-плана</li>
+            <li>Финансовая модель под ваш бюджет</li>
+            <li>Гайд «Ассортимент, который точно продаётся»</li>
+            <li>Чек-лист: «Как не слить бюджет на старте»</li>
+          </ul>
+        </div>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h2>Контакты</h2>
+          <p class="small">Напишите мне — расскажу формат, этапы и стоимость.</p>
+          <p><strong>Татьяна</strong></p>
+          <p>Телефон: <a href="tel:+79000000000">+7 (900) 000-00-00</a></p>
+          <p>Email: <a href="mailto:tatiana@example.com">tatiana@example.com</a></p>
+          <div style="margin-top:12px"><a class="btn" href="mailto:tatiana@example.com">Связаться</a></div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3>Почему обращаются ко мне</h3>
+          <ul>
+            <li>Реальный предприниматель, а не теоретик</li>
+            <li>Открыла несколько магазинов своими руками</li>
+            <li>Глубокое знание рынка и поставщиков</li>
+            <li>Пошаговое ведение до результата</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:18px; text-align:center">
+          <h3>Готовы начать?</h3>
+          <p class="small">Заполните заявку или напишите в чат — обсудим ваш проект.</p>
+          <a class="btn" href="mailto:tatiana@example.com">Оставить заявку</a>
+        </div>
+        <div class="card" style="margin-top:18px">
+          <h2>Заявка</h2>
+          <form class="form-block" action="#" method="post">
+            <label class="form-label">Ваше имя</label>
+            <input type="text" name="name" required>
+
+            <br><br>
+            <label class="form-label">Телефон</label>
+            <input type="text" name="phone" required>
+
+            <br><br>
+            <label class="form-label">Комментарий</label>
+            <textarea name="comment" rows="4"></textarea>
+
+            <br><br>
+            <button class="btn" type="submit">Отправить заявку</button>
+          </form>
+        </div>
+
+        <div class="card" style="margin-top:18px; text-align:center">
+          <h2>Оплата</h2>
+          <p class="small">Для реальной оплаты можно подключить ЮKassa, СберБизнес или Тинькофф. Сейчас кнопка демонстрационная.</p>
+          <a class="pay-btn" href="#">Оплатить</a>
+        </div>
+
+</aside>
+    </div>
+
+    <footer>
+      © 2025 Татьяна — Открытие зоомагазинов «Под Ключ»
+    </footer>
+  </div>
+  <script>
+    // --- Отправка формы в Telegram ---
+    document.querySelector('form.form-block')?.addEventListener('submit', async function(e){
+      e.preventDefault();
+
+      const name = this.name.value.trim();
+      const phone = this.phone.value.trim();
+      const comment = this.comment.value.trim();
+
+      const message = `📩 Новая заявка с сайта:%0A%0A👤 Имя: ${name}%0A📞 Телефон: ${phone}%0A📝 Комментарий: ${comment}`;
+
+      // --- ВАЖНО ---
+      // Замените YOUR_BOT_TOKEN и YOUR_CHAT_ID на реальные значения
+      const BOT_TOKEN = "YOUR_BOT_TOKEN";
+      const CHAT_ID = "YOUR_CHAT_ID"; // можно подставить ID @zoo_biz_start, если это чат/канал
+
+      const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${message}`;
+
+      try {
+        const res = await fetch(url);
+        if(res.ok){
+          alert("Заявка успешно отправлена!");
+          this.reset();
+        } else {
+          alert("Ошибка отправки. Проверьте настройки бота.");
+        }
+      } catch(err){
+        alert("Не удалось отправить сообщение. Проверьте подключение.");
+      }
+    });
+  </script>
+</body>
+</html>
